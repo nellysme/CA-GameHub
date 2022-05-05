@@ -7,9 +7,19 @@ body {
   padding-bottom: 100px; 
 }
 
+.responsive {
+  width: 100%;
+  max-width: 1700px;
+  max-height: 430px;
+  height: auto;
+}
+
+div.content {
+  position: sticky;
+  margin-left: 180px;
+}
 
 /* Header */
-
 .header {
   background-color: #2F344D;
   min-height: 112px;
@@ -25,7 +35,7 @@ body {
   width: 118px;
   height: 74px;
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .signin {
@@ -34,11 +44,11 @@ body {
   margin-right: 30px;
   margin-top: 40px;
   font-size: 24px;
-  text-decoration: none; !important
+  text-decoration: none;
 }
 
-/* Button in header */
 
+/* Button in header */
 .btn {
   text-align: center;
   float: right;
@@ -78,14 +88,58 @@ i {
   background-position: right;
 }
 
+/* drop down menu with genras */
+
+.dropbtn {
+  background-color: #2F344D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  z-index: 1;
+  position:absolute;
+  border-radius: 20px;
+  width: 140px;
+  text-align: left;
+  box-shadow: 0px 0 6px -2px black;
+  margin-top: 10px;
+}
+
+.dropdown {
+  display:flex;
+  display: inline-block;
+  margin-top: 130px;
+}
+
+.dropdown-content {
+  margin-top: 60px;
+  display: none;
+  position: fixed;
+  background-color: #2F344D;
+  min-width: 140px;
+  box-shadow: 0px 0 6px -2px black;
+  border-radius: 20px;
+  width: 110px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  width: 110px;
+}
+
+.dropdown-content a:hover {background-color: #3E425A;}
+.dropdown:hover .dropdown-content {display: block;}
+
 
 /* side navigation */
-
 .sidebar {
   margin: 0;
   padding: 0;
   width: 140px;
-  margin-top: 0px;
   background-color: #2F344D;
   position: fixed;
   height: 100%;
@@ -109,32 +163,43 @@ li {
   list-style-type: none;
 }
 
+/* slider, but dont know how to make one so its an example */
+.slider{
+  margin-top: 75px;
+}
+
+
+
 /* media */
-
-
-
-
 @media screen and (max-width: 800px) {
   .sidebar {
     margin-top: 0px;
     width: 100%;
     height: auto;
     position: relative;
-    position:fixed;
-    bottom:0;
-    left:0;
 }
 
-header nav {
+.header nav {
     width:90%;
     margin:0;
     height:80px;
 }
-body {
+.body {
     margin:0 0 100px 0;
 }
-  .header{
+.header{
     display: none;
   }
+.dropdown{
+    display: none;
+  }
+.sidebar a {
+  float: bottom;
+}
+div.content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}
 }
  
