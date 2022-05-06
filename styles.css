@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   padding-bottom: 100px; 
   display: flex;
+  flex-direction: column;
 }
 
 .responsive {
@@ -17,7 +18,7 @@ body {
 
 div.content {
   position: sticky;
-  margin-left: 190px;
+  margin-left: 180px;
 }
 
 /* Header */
@@ -47,6 +48,8 @@ div.content {
   font-size: 24px;
   text-decoration: none;
 }
+
+
 
 
 /* Button in header */
@@ -169,16 +172,17 @@ li {
   margin-top: 75px;
 }
 
+section {
+  max-width: auto;
+  width: 100%;
+  
+}
+
 /* NEW IN GAMES */
 .wrapper{
   display: flex;
-  flex-basis: auto;
-  flex:content;
   flex-wrap: wrap;
-  gap: 47px;
-  margin-top: -20px;
-  justify-content: center;
-  margin-left: -25px;
+  gap: 45px;
 }
 
 .wrapper img{
@@ -234,3 +238,114 @@ div.content {
 }
 }
  
+
+
+
+
+section {
+  max-width: auto;
+  width: 100%;
+  margin: 40px auto;
+}
+
+section.fullwidth {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+section {
+  max-width: auto;
+  width: 100%;
+  margin: 40px auto;
+}
+
+section.fullwidth {
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  align-items: end;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer h4 {
+  margin: 0;
+}
+
+/*Jackets Page*/
+
+.jacket-list {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+
+.jacket-product {
+  width: 25%;
+  flex-grow: 1;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.jackets-page {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: auto;
+  width: 100%;
+  margin: 40px auto;
+}
+
+.jacket-img {
+  width: 100%;
+}
+
+.gender-nav a:hover {
+  text-decoration: underline;
+}
+
+.gender-nav {
+  margin: 0 auto;
+  flex: 0 1 20%;
+  font-size: 0.8em;
+}
+
+.class-cta {
+  background-color: #2ad5c0;
+  font-weight: bold;
+  padding: 10px 40px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .jacket-product {
+    width: 100%;
+  }
