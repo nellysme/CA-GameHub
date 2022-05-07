@@ -21,6 +21,9 @@ div.content {
   margin-left: 160px;
 }
 
+
+
+
 /* Header */
 .header {
   background-color: #2F344D;
@@ -92,6 +95,8 @@ i {
   background-position: right;
 }
 
+
+
 /* drop down menu with genras */
 
 .dropbtn {
@@ -107,6 +112,7 @@ i {
   text-align: left;
   box-shadow: 0px 0 6px -2px black;
   margin-top: 10px;
+  margin-left: 20px;
 }
 
 .dropdown {
@@ -124,6 +130,7 @@ i {
   box-shadow: 0px 0 6px -2px black;
   border-radius: 20px;
   width: 110px;
+  margin-left: 20px;
 }
 
 .dropdown-content a {
@@ -133,10 +140,13 @@ i {
   display: block;
   border-radius: 20px;
   width: 110px;
+
 }
 
 .dropdown-content a:hover {background-color: #3E425A;}
 .dropdown:hover .dropdown-content {display: block;}
+
+
 
 
 /* side navigation */
@@ -167,45 +177,66 @@ li {
   list-style-type: none;
 }
 
+
+
 /* slider, but dont know how to make one so its an example */
 .slider{
   margin-top: 75px;
   padding: 20px;
+}
 
+.slider-img{
+  object-position: 10% 10%;
+}
+
+/* game products */
+
+.game-page {
+  display:xlflex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.game-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.game-product {
+  width: 20%;
+  flex-grow: 1;
+  margin: 20px;
+ 
+}
+
+.game-img {
+  width: 100%;
+}
+ 
+
+.polaroid {
+  height: 250px;
+  background-color:#2F344D;
+  box-shadow: 0px 0 6px -2px black; 
+}
+
+.polaroid img {
+  max-width: 100%;
+  height: 170px;
+  object-fit: cover;
+  object-position: 0% 10%;
+}
+
+.game-product:hover{
+  background: white;
+  border: 1px solid white;
+  margin: 19px;
 }
 
 section {
   max-width: auto;
   width: 100%;
-  
-  
-}
-
-/* NEW IN GAMES */
-.wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 45px;
-}
-
-.wrapper img{
-  object-position: 0% 10%;
-}
-.wrapper-games img{
-  object-position: 0% 10%;
-}
-
-.polaroid img {
-  width: 390px;
-  height: 170px;
-}
-
-.polaroid {
-  height: 250px;
-  width: 390px;
-  background-color:#2F344D;
-  box-shadow: 0px 0 6px -2px black; 
-}
+} 
 
 
 /* media */
@@ -222,66 +253,42 @@ section {
     margin:0;
     height:80px;
 }
+
 .body {
     margin:0 0 100px 0;
 }
+
 .header{
     display: none;
   }
+
 .dropdown{
     display: none;
   }
+
 .sidebar a {
   float: bottom;
 }
+
 div.content {
   margin-left: 10px;
   margin-right: 10px;
 }
 }
  
-
-.jacket-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.jacket-product {
-  width: 20%;
-  flex-grow: 1;
-  padding: 20px;
-
- 
-}
-
-.jackets-page {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  
-
-}
-
-.jacket-img {
-  width: 100%;
-}
-
-
-
-@media only screen and (max-width: 500px) {
-  .jacket-product {
+@media only screen and (max-width: 600px) {
+  .game-product {
     width: 100%;
-    
   }
-
-
-
-
-  @media only screen and (max-width: 700px) {
-    .jacket-product {
-      width: 50%;
-     
+  
+  @media only screen and (max-width: 800px) {
+    .game-product {
+     flex: auto;
+    ;
     }
-  
+
   }
   
+
+  
+ 
