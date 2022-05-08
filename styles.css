@@ -18,10 +18,12 @@ body {
 
 div.content {
   position: sticky;
-  margin-left: 160px;
+  margin-left: 150px;
 }
 
-
+h1{
+  margin-left: 20px;
+}
 
 
 /* Header */
@@ -181,32 +183,40 @@ li {
 
 /* slider, but dont know how to make one so its an example */
 .slider{
-  margin-top: 75px;
+  margin-top: 60px;
   padding: 20px;
 }
 
-.slider-img{
-  object-position: 10% 10%;
-}
+
 
 /* game products */
-
 .game-page {
-  display:xlflex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.game-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin-top: -20px;  
+  
+}
+
+.game-list, .game-list-best {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  justify-content: space-evenly;
 }
 
 .game-product {
   width: 20%;
   flex-grow: 1;
   margin: 20px;
- 
+
+}
+
+.game-product-best {
+  display: flexbox;
+  width: 10%;
+  flex-grow: 1;
+  margin: 20px;
 }
 
 .game-img {
@@ -227,7 +237,7 @@ li {
   object-position: 0% 10%;
 }
 
-.game-product:hover{
+.game-product:hover, .game-product-best:hover{
   background: white;
   border: 1px solid white;
   margin: 19px;
@@ -237,6 +247,69 @@ section {
   max-width: auto;
   width: 100%;
 } 
+
+div.a {
+  line-height: normal;
+  font-size: 24px;
+  margin-left: 10px;
+  color: white;
+}
+
+div.b {
+  line-height: 20px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+}
+
+div.c {
+  line-height: 30px;
+  font-size: 15px;
+  margin-left: 10px;
+  color: white;
+  font-weight: lighter;
+}
+div.d {
+  font-weight: bold;
+  text-align: right;
+  line-height: 55px;
+  font-size: 23px;
+  margin-left: 10px;
+  color: white;
+  margin-top: -50px;
+  margin-right: 10px;
+  flex-basis: auto;
+}
+div.e {
+  font-weight: bold;
+  text-align: right;
+  line-height: 55px;
+  font-size: 20px;
+  margin-left: 10px;
+  color: white;
+  margin-top: -45px;
+  margin-right: 10px;
+  content: 'min-content';
+}
+
+
+/* bottom / footer */
+.box{  
+  background-color: #8980F1; 
+  position: flex;
+  max-height: 309px; 
+  max-width: 1700px; 
+  margin-left: 20px;
+  margin-top: 80px;
+}
+
+.samurai{
+  margin-left: 180px;
+  margin-top: -30px;
+  display: inline-flex;
+  max-height: 387px;
+  max-width: 544px;
+}
 
 
 /* media */
@@ -274,21 +347,27 @@ div.content {
   margin-left: 10px;
   margin-right: 10px;
 }
+.game-product, .game-product-best {
+  width: 100%;
+}
+.box{
+  display: none;
+}
+}
+
+@media screen and (max-width: 900px){
+  .game-product, .game-product-best {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 500px){
+  .game-product, .game-product-best {
+    width: 50%;
+  }
 }
  
-@media only screen and (max-width: 600px) {
-  .game-product {
-    width: 100%;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .game-product {
-     flex: auto;
-    ;
-    }
-
-  }
-  
 
   
- 
+
+
+
