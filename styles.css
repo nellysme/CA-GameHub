@@ -224,10 +224,12 @@ li {
 }
  
 
+
 .polaroid {
   height: 250px;
   background-color:#2F344D;
   box-shadow: 0px 0 6px -2px black; 
+  
 }
 
 .polaroid img {
@@ -246,6 +248,8 @@ li {
 section {
   max-width: auto;
   width: 100%;
+  margin-top: 60px;
+  
 } 
 
 div.a {
@@ -311,6 +315,161 @@ div.e {
   max-width: 544px;
 }
 
+/* shooting site */
+.shootingsite{
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.shooting-card{
+  height: 665px;
+  width: 900px;
+  background-color:#2F344D;
+  box-shadow: 0px 0 6px -2px black;
+}
+
+.row{
+  
+}
+.overskrift{
+  margin-top: 40px;
+}
+
+.class {
+  text-align: center;
+  float: right;
+  background-color: #7D89FA;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+}
+
+.cta {
+  border-color: #8980F1;
+  color: white;
+}
+
+
+.cardshooting img {
+  width: 100%;
+  height: auto;
+  object-position: 10% 30%;
+}
+
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    
+    
+  }
+
+  .shooting101{
+    float:center;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px;
+    
+  }
+
+  .cardshooting{
+    background-color:#2F344D;
+    box-shadow: 0px 0 6px -2px black;
+    text-align: left;
+    max
+  }
+
+
+  .card {
+    background-color:#2F344D;
+    box-shadow: 0px 0 6px -2px black;
+    text-align: left;
+    height: 250px;
+  }
+
+  .card img{
+   
+      width: 100%;
+      height: 170px;
+    
+  }
+
+
+/* checkout */
+
+.checkout{
+  padding: 20px;
+  margin-top: 130px;
+  width: auto;
+  
+}
+
+.labels{
+  display: flex;
+  flex-direction: row;
+}
+ /*order complete*/
+
+ .confirmation{
+   padding: 20px;
+   margin-top: 100px;
+   display: flex;
+ }
+
+ .orderinfo{
+   margin-top: 100px;
+   margin-left: -190px;
+ }
+
+ .continue{
+   display: flex;
+ }
+
+ .contact-form{
+   padding: 20px;
+   margin-top: 100px;
+ }
+
+ .contact-form > *{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+ }
+
+
+ .footer{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   background-color: white;
+   max-height: 500px;
+ }
+
+.sliderr{
+  margin-top: 130px; 
+}
+
+ .sliderr img{
+  height: 200px;
+}
+
+.profilepic{
+  border-radius: 50%;
+  margin-top: -100px;
+}
+
+.profile{
+  padding: 20px;
+}
+
+.text{
+  margin-left: 20px;
+}
 
 /* media */
 @media screen and (max-width: 800px) {
@@ -343,7 +502,7 @@ div.e {
   float: bottom;
 }
 
-div.content {
+div.content, .checkout, .contact-form {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -352,6 +511,8 @@ div.content {
 }
 .box{
   display: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 }
 
@@ -367,7 +528,44 @@ div.content {
 }
  
 
-  
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
 
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-top: 10px;
+  }
+}
