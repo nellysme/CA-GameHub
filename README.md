@@ -1,7 +1,8 @@
 # GameHub
 
-![game](https://github.com/nellysme/CA-GameHub/assets/95544187/026440ad-b910-4f12-b44b-2e789b1bb0df)
 
+
+![game](https://github.com/nellysme/CA-GameHub/assets/95544187/f37a10c2-4d39-4bd7-8099-34be36299aa6)
 
 
 ## Description
