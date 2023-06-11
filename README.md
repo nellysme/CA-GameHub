@@ -28,6 +28,8 @@ This is my cross-course project. The assignment had 3 different themes to choose
 ```bash
 [[git clone git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/nellysme/project-exam-1.git)](https://github.com/nellysme/CA-GameHub.git)
 ```
+### Live link
+[Live demo](https://kaleidoscopic-naiad-0d5ac7.netlify.app/index.html)
 # Contact
 
 
